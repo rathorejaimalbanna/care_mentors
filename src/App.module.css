@@ -1,0 +1,252 @@
+.campusDiv{
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 95vh;
+  justify-content: space-evenly;
+  align-items: center;
+  color:#fff;
+  margin-right: 0;
+}
+.campusDiv{
+  width: 100%;
+  height: inherit;
+}
+.campusCopy{
+  position:relative;
+  margin-right: 0;
+}
+.campusDiv::before{
+  background-color: #000;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+ width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .5;
+}
+.campusCopy::before{
+  background:url('../public/campus2.jpg') center center/cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+ width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: .5;
+}
+.photoDiv{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 35%;
+  min-width:250px;
+  background-color: transparent;
+  max-height: 400px;
+  font-size: x-small;
+}
+.formDiv{
+  height: auto;
+  width: 30%;
+  min-width:250px;
+  background-color: #fff;
+  box-shadow: 0 40px 80px -40px #000;
+  border-radius: 14px;
+  padding: 1%;
+  min-height: 350px;
+  color:#000;
+}
+.formInput{
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  margin: 10px 0px;
+  padding-left: 5px;
+  outline: none;
+  border: .5px solid gray;
+}
+.form{
+  padding: 10px;
+  padding-top: 20px;
+}
+.submitButton{
+  background-color:rgb(238,116,30);
+  border:none;
+  border-radius:3px;
+  margin-top:5%;
+  width: 100%;
+  height: 30px;
+}
+.submitButton:hover{
+  color:#fff;
+}
+.modalDiv{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100vw;
+  z-index: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.modalDiv::before{
+  position:absolute;
+  background-color: #000;
+  top:0;
+  left: 0;
+  content:'';
+  width: 100%;
+  height: 100%;
+  z-index:-1;
+  opacity: .7;
+}
+.modalButton{
+  margin-left: 30vw;
+  margin-top: -100px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.delete{
+  width: 30px;
+  height: 30px;
+}
+.contactIcons{
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.photoInnerDiv{
+  text-align: center;
+  height: 16%;
+  width: 16%;
+  margin: 2.5%;
+}
+.photo{
+  width: 100%;
+  height: 90%;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+
+.detailsOuter{
+  height: auto;
+  width: 100vw;
+  background-color: rgb(246, 246, 241);
+  text-align: center;
+  padding-top: 3%;
+}
+.collegeDetails{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  background-color: rgb(246, 246, 241);
+  padding: 3%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.collegeDetailsInnerDiv{
+  width:25% ;
+  height: 300px;
+  margin: 1%;
+  background-color: #fff;
+  box-shadow: 0 40px 80px -40px #000;
+  min-width: 250px;
+  margin-top: 25px;
+}
+.detailsImage{
+  width: 100%;
+  height: 50%;
+  margin-bottom: 3%;
+}
+
+.detailsButton{
+  background-color: rgb(238,116,30);
+  color: #fff;
+  border: none;
+  width: 40%;
+  box-shadow: 0 20px 40px -20px red;
+  border-radius: 3px;
+}
+.check{
+  margin-left: 20%;
+  margin-right: 2px;
+}
+.contactDiv{
+  position: fixed;
+  right: 0;
+  top:35vh;
+}
+.contactDetails{
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+@media  screen and (max-width:700px) {
+  .contactDiv{
+    position: fixed;
+    top:auto;
+    bottom: 25px !important;
+    z-index: 10;
+  }
+  .contactDetails{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 30px;
+    justify-content: center;
+  }
+  .formDiv{
+    width: 90%;
+  }
+  .photoDiv{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 3%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .photoInnerDiv{
+    height: 18%;
+    width: 18%;
+  }
+  .collegeDetailsInnerDiv{
+    width: 90%;
+  }
+  .modalButton{
+    margin-left: 80vw;
+  }
+  .tle{
+    font-size: 1rem;
+  }
+  .check{
+    margin-left: 12%;
+  }
+}
+.tle{
+  text-decoration:none;
+  color:gray;
+}
+@media  screen and (max-width:400px){
+  .formDiv{
+    margin-bottom: 25px;
+  }
+  .check{
+    margin-left: 6%;
+  }
+}
+
